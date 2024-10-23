@@ -1,0 +1,7 @@
+firebase.auth().signOut()
+  .then(function() {
+    // 登出後強制重整一次頁面
+    window.location.reload();
+  }).catch(function(error) {
+    console.log(error.message)
+  });
